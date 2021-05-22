@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  max-width: 920px;
+  width: 100%;
+  margin: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #4B4A5A;
+  margin-bottom: 40px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #4B4A5A;
+}
+nav ul li a:hover {
+  color: #d7a43d;
+  transition: color 0.3s;
+}
+nav ul li button {
+  padding: 6.6666666667px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #0414B3;
+  color: #0414B3;
+  background-color: #fff;
+}
+nav ul li button img {
+  width: 20px;
+  vertical-align: middle;
+}
+nav ul li button p {
+  vertical-align: middle;
+  display: inline-block;
+}
+nav ul li button:hover {
+  color: #0e14ee;
+  border: 1px solid #0e14ee;
+}
+
+.section-hero {
+  display: flex;
+  margin: 20px auto;
+}
+.section-hero .img-illustration-main {
+  width: 400px;
+}
+.section-hero .img-illustration-main img {
+  width: 100%;
+}
+.section-hero h1 {
+  color: #58402d;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 6.6666666667px;
+}
+.section-hero h3 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #58402d;
+  margin-bottom: 20px;
+}
+.section-hero button {
+  padding: 5px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #0414B3;
+  color: #fff;
+  background-color: #0414B3;
+}
+.section-hero button img {
+  width: 20px;
+  vertical-align: middle;
+}
+.section-hero button p {
+  vertical-align: middle;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 12px;
+}
+.section-hero button:hover {
+  color: #fff;
+  border: 1px solid #0e14ee;
+  background-color: #0e14ee;
+}
+.section-hero .wrapper-section-hero-title .paragraph-small {
+  font-size: 10px;
+}
+.section-hero .wrapper-section-hero-title span {
+  font-size: 10px;
+}
+
+.wrapper-section-before {
+  background-color: #f6e2d5;
+}
+.wrapper-section-before .section-before {
+  text-align: center;
+  margin: 20px auto;
+  border-bottom: 2px solid #58402d;
+  max-width: 920px;
+}
+.wrapper-section-before .section-before .img-before-wrapper {
+  width: 260px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 40px;
+}
+.wrapper-section-before .section-before .img-before-wrapper img {
+  width: 100%;
+}
+.wrapper-section-before .section-before .icons-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.wrapper-section-before .section-before .icons-wrapper img {
+  width: 100px;
+}

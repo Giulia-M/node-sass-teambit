@@ -1,0 +1,47 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $primary_color;
+    margin-bottom: $spacing *2;
+    
+
+    ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        li {
+            display: inline-block;
+            margin: 0 $spacing;
+            a {
+                text-decoration:none;
+                color: $primary_color;
+                &:hover {
+                    color: $hover;
+                    transition: color .3s;
+                }
+            }
+
+            button {
+                padding: $spacing /3;
+                margin: $spacing/2 0;
+                border-radius: $button_border_radius;
+                border: 1px solid $primary_color_Button;
+                color: $primary_color_Button;
+                background-color: #fff;
+                img {
+                    width: $spacing;
+                    vertical-align: middle;
+                }
+                p {
+                    vertical-align: middle;
+                    display: inline-block;
+                }
+                &:hover {
+                    color: $hover_Button;
+                    border: 1px solid $hover_Button;
+                }
+            }
+        }
+    }
+}
