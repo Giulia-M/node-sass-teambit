@@ -10,17 +10,18 @@ $primary_color_Button: #0414B3;
 $hover_Button: #0e14ee;
 $button_border_radius: 5px;
 
+@use 'sass:math';
 @import "partials/commons";
 @import "partials/header";
 
 .section-hero {
     display: flex;
     margin: $spacing auto;
-
-    
-
+    .wrapper-section-hero-title {
+        width: 50%;
+    }
     .img-illustration-main {
-        width: 400px;
+        width: 50%;
     
         img {
             width: 100%;
@@ -29,22 +30,23 @@ $button_border_radius: 5px;
 
     h1 {
         color:$secondary_color;
-        font-size: $font-size *2;
+        font-size: ($font-size * 2);
         font-weight: bold;
-        margin-bottom: $spacing/3;
+    
+        margin-bottom: math.div($spacing, 3);
     }
 
     h3 {
         font-size: $font-size;
         font-weight: bold;
         color:$secondary_color;
-        margin-bottom: $spacing;
+        margin-bottom: $spacing * 2;
     }
 
     button {
-        
-        padding: $spacing /4;
-        margin: $spacing/2 0;
+        margin-bottom: $spacing;
+        padding: math.div($spacing, 4);
+    
         border-radius: $button_border_radius;
         border: 1px solid $primary_color_Button;
         color: #fff;
@@ -70,13 +72,11 @@ $button_border_radius: 5px;
     }
     
     .wrapper-section-hero-title  {
-
         .paragraph-small {
             font-size: $font-size - 4px;
         }
         span {
             font-size: $font-size - 4px;
-
         }
     }
 }
@@ -84,17 +84,20 @@ $button_border_radius: 5px;
     background-color: $background_color;
 
     .section-before {
+        padding: ($spacing + 20px) 0;
         text-align: center;
-        margin:$spacing auto;
-        border-bottom: 2px solid $secondary_color;
+        margin: $spacing auto 0;
+        border-bottom: 1px solid $secondary_color;
         max-width: 920px;
-    
+        h3 {
+            margin: $spacing 0 ($spacing * 2);
+            color: $secondary_color;
+
+        }
     
         .img-before-wrapper {
             width: $spacing * 13;
-            text-align: center;
-            margin: auto;
-            margin-bottom: $spacing * 2;
+            margin: ($spacing * 3) auto ($spacing * 2);
             img {
                 width: 100%;
             }
@@ -103,10 +106,69 @@ $button_border_radius: 5px;
         .icons-wrapper {
             display: flex;
             justify-content: space-around;
-            img {
+
+            div {
                 width: $spacing * 5;
-        
+                img {
+                    width: 100%;
+                }
+
             }
+        }
+        
+    }
+}
+
+.wrapper-section-after {
+    background-color: $background_color;
+
+    .section-after {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 920px;
+        padding: ($spacing * 2) 0;
+
+        h3 {
+            margin: $spacing auto ($spacing * 2);
+            font-weight: bold;
+            width: 590px;
+            color: $secondary_color;
+        }
+    
+        .img-after-wrapper {
+            width: $spacing * 13;
+            text-align: center;
+            margin: ($spacing * 3) auto ($spacing * 2);
+            img {
+                width: 100%;
+            }
+    
+        }
+        .icons-wrapper {
+            display: flex;
+            justify-content: space-around;
+            align-items: baseline;
+
+            div {
+                img {
+                    width: $spacing * 5;
+                }
+                margin-bottom: $spacing + 10px;
+            }
+
+            div:last-of-type {
+                img {
+                    width: $spacing * 2;
+                }
+                
+            }
+            div {
+                p{
+                    font-size: $font-size - 4px;
+                    color: $secondary_color;
+                }
+            }
+
         }
         
     }

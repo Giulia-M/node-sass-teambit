@@ -3,7 +3,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid $primary_color;
-    margin-bottom: $spacing *2;
+    margin-bottom: $spacing * 2;
     
 
     ul {
@@ -15,7 +15,8 @@ nav {
             margin: 0 $spacing;
             a {
                 text-decoration:none;
-                color: $primary_color;
+                color: $secondary_color;
+                font-weight: bolder;
                 &:hover {
                     color: $hover;
                     transition: color .3s;
@@ -23,8 +24,10 @@ nav {
             }
 
             button {
-                padding: $spacing /3;
-                margin: $spacing/2 0;
+            
+                padding: math.div($spacing, 3);
+                margin: math.div($spacing, 2) 0;
+                
                 border-radius: $button_border_radius;
                 border: 1px solid $primary_color_Button;
                 color: $primary_color_Button;
