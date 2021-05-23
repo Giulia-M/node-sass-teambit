@@ -1,0 +1,37 @@
+.wrapper-section-before {
+   background-color: $background_color;
+
+    .section-before {
+        padding: ($spacing + 20px) 0;
+        text-align: center;
+        margin: $spacing auto 0;
+        border-bottom: 1px solid $secondary_color;
+        max-width: 920px;
+        h3 {
+            margin: $spacing 0 ($spacing * 2);
+            color: $hover;
+        }
+    
+        .img-before-wrapper {
+            width: $spacing * 13;
+            margin: ($spacing * 3) auto ($spacing * 2);
+            img {
+                width: 100%;
+            }
+    
+        }
+        .icons-wrapper {
+            display: flex;
+            justify-content: space-around;
+
+            div {
+                width: $spacing * 5;
+                img {
+                    width: 100%;
+                }
+
+            }
+        }
+        
+    }
+}

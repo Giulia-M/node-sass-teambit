@@ -137,7 +137,7 @@ header nav ul li button:hover {
 }
 .wrapper-section-before .section-before h3 {
   margin: 20px 0 40px;
-  color: #3e14e9;
+  color: #7f14d4;
 }
 .wrapper-section-before .section-before .img-before-wrapper {
   width: 260px;
@@ -216,13 +216,19 @@ header nav ul li button:hover {
 }
 .wrapper-text-feed h3 {
   margin-bottom: 20px;
+  color: #3e14e9;
 }
 .wrapper-text-feed p {
   margin-bottom: 10px;
   width: 45%;
+  color: #0e14ee;
 }
 .wrapper-text-feed a {
   text-decoration: none;
+  color: #0e14ee;
+}
+.wrapper-text-feed a:hover {
+  color: #9830eb;
 }
 .wrapper-text-feed img {
   margin-top: 10px;
@@ -233,6 +239,7 @@ header nav ul li button:hover {
 }
 .surveys .wrapper-text-feed p {
   width: 100%;
+  color: #0e14ee;
 }
 .surveys .wrapper-text-feed .wrapper-feed-img {
   width: 85%;

@@ -1,0 +1,63 @@
+.container-padding {
+    display: flex;
+    padding: $spacing $spacing;
+}
+
+.wrapper-img-survey, .wrapper-feed-img {
+    width: 50%;
+    img {
+        width: 100%;
+    }
+}
+
+.wrapper-text-feed {
+    width: 50%;
+    h3 {
+        margin-bottom: $spacing;
+        color: $primary_color;
+    }
+    p {
+        margin-bottom: $spacing / 2;
+        width: 45%;
+        color: $secondary_color;
+    }
+
+    a {
+        text-decoration: none;
+        color: $secondary_color;
+        &:hover {
+            color: lighten($color: $hover, $amount: 10)
+        }
+    }
+
+    img {
+        margin-top: $spacing / 2;
+    }
+
+}
+
+
+.surveys {
+    
+    .wrapper-text-feed {
+        padding-left: 15%;
+        p {
+            width: 100%;
+            color: $secondary_color;
+        }
+        .wrapper-feed-img {
+            width: 85%;
+            img {
+                width: 100%;
+            }
+        }
+        
+    }
+    .wrapper-img-survey {
+        width: 50%;
+        img {
+            width: 100%;
+        }
+    }
+    
+}

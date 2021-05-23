@@ -1,0 +1,85 @@
+//sezione prima di footer 
+.wrapper-teambit {
+    color: $secondary_color;
+    font-size: $font-size;
+    .text-align {
+        text-align: center;
+        .paragraph-small {
+            cursor: pointer;
+            color: $secondary_color;
+        }
+    }
+    background-color: $background_color;
+    padding: ($spacing * 2) 0;
+    h1 {
+        font-size: $font-size * 2;
+        color: $primary_color;
+        margin-bottom: $spacing;
+        margin-top: $spacing;
+    }
+
+    .panel {
+        border-radius: 10px;
+        background-color: #fff;
+        width: 50%;
+        margin: 0 auto;
+        padding: $spacing;
+        border: 1px solid $primary_color_Button;
+        p {
+            margin-bottom: $spacing;
+            color:$primary_color;
+            
+        }
+        span {
+           
+            img{
+                width: 50px;
+                &:first-of-type {
+                    margin-right: $spacing;
+                }
+            }
+            
+            
+        }
+        div {
+            margin-top: $spacing / 2;
+            display: flex;
+            align-items: center;
+            .authors {
+                display: inline-block;
+                font-size: $font-size - 3px;
+    
+            }
+        }
+    }
+
+    button {
+        margin: $spacing 0;
+        padding: math.div($spacing, 4);
+    
+        border-radius: $button_border_radius;
+        border: 1px solid $primary_color_Button;
+        color: #fff;
+        background-color:$primary_color_Button;
+
+        img {
+            width: $spacing;
+            vertical-align: middle;
+        }
+        p {
+            vertical-align: middle;
+            display: inline-block;
+            font-weight: bold;
+            font-size: $font-size - 2px;
+            cursor: pointer;
+
+        }
+        &:hover {
+            color: #fff;
+            border: 1px solid $hover_Button;
+            background-color: $hover_Button;
+        }
+        
+    }
+
+}
