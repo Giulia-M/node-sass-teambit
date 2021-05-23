@@ -45,10 +45,13 @@
             margin-top: $spacing / 2;
             display: flex;
             align-items: center;
-            .authors {
-                display: inline-block;
-                font-size: $font-size - 3px;
-    
+            @media all and (min-width: 768px) {
+
+                .authors {
+                    display: inline-block;
+                    font-size: $font-size - 3px;
+        
+                }
             }
         }
     }

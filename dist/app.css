@@ -298,9 +298,11 @@ header nav button:hover {
   display: flex;
   align-items: center;
 }
-.wrapper-teambit .panel div .authors {
-  display: inline-block;
-  font-size: 11px;
+@media all and (min-width: 768px) {
+  .wrapper-teambit .panel div .authors {
+    display: inline-block;
+    font-size: 11px;
+  }
 }
 .wrapper-teambit button {
   margin: 20px 0;
@@ -408,7 +410,6 @@ footer.container {
   padding: 0 20px;
 }
 .col-8 h3, .col-4-wrapper h3 {
-  margin: 40px 0;
   color: #0e14ee;
 }
 .col-8 ul, .col-4-wrapper ul {

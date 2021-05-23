@@ -99,22 +99,22 @@ footer.container {
     font-size: 12px;
     font-weight: bold;
 }
-    .col-8, .col-4-wrapper {
-        padding: 0 20px;
-        h3 {
-            margin: $spacing * 2 0;
-            color: $secondary_color;
-        }
-        ul {
-            list-style: none;
-            li {
-                a {
-                    @include anchors;
-    
-                }
+.col-8, .col-4-wrapper{
+    padding: 0 20px;
+    h3 {
+        
+        color: $secondary_color;
+    }
+    ul {
+        list-style: none;
+        li {
+            a {
+                @include anchors;
+
             }
         }
     }
+}
     
 
 
