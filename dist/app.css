@@ -26,25 +26,27 @@ header nav div img {
   max-width: 120px;
   width: 100%;
 }
-header nav ul {
-  display: flex;
-  list-style: none;
-  align-items: center;
+@media (min-width: 767.9px) {
+  header nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+  header nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+  }
+  header nav ul li a {
+    text-decoration: none;
+    color: #0e14ee;
+    font-weight: bolder;
+  }
+  header nav ul li a:hover {
+    color: #7f14d4;
+    transition: color 0.3s;
+  }
 }
-header nav ul li {
-  display: inline-block;
-  margin: 0 20px;
-}
-header nav ul li a {
-  text-decoration: none;
-  color: #0e14ee;
-  font-weight: bolder;
-}
-header nav ul li a:hover {
-  color: #7f14d4;
-  transition: color 0.3s;
-}
-header nav ul li button {
+header nav button {
   padding: 6.6666666667px;
   margin: 10px 0;
   border-radius: 5px;
@@ -52,17 +54,17 @@ header nav ul li button {
   color: #0414B3;
   background-color: #fff;
 }
-header nav ul li button img {
+header nav button img {
   width: 20px;
   display: inline-block;
   vertical-align: middle;
 }
-header nav ul li button a {
+header nav button a {
   vertical-align: middle;
   display: inline-block;
   text-decoration: none;
 }
-header nav ul li button:hover {
+header nav button:hover {
   color: #0e14ee;
   border: 1px solid #0e14ee;
 }
@@ -169,7 +171,7 @@ header nav ul li button:hover {
 .wrapper-section-after .section-after h3 {
   margin: 20px auto 40px;
   font-weight: bold;
-  width: 590px;
+  width: 54%;
   color: #3e14e9;
 }
 .wrapper-section-after .section-after .img-after-wrapper {
@@ -392,4 +394,51 @@ footer.container .row-footer .col-8 .row .col-3 ul li a {
   line-height: 2.5;
   font-size: 12px;
   font-weight: bold;
+}
+
+.hidden-xs {
+  display: none;
+}
+
+@media (min-width: 767.9px) {
+  .visible-sm-inline-block {
+    display: inline-block;
+  }
+
+  .hidden-sm {
+    display: none;
+  }
+}
+@media (max-width: 767.9px) {
+  .visible-xs-inline-block {
+    display: inline-block;
+    margin: 0 20px;
+    color: #0e14ee;
+  }
+}
+@media all and (max-width: 767.9px) {
+  header nav ul .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  ul#myTopnav {
+    position: absolute;
+    top: 45px;
+    right: 33px;
+  }
+  ul#myTopnav li {
+    list-style: none;
+  }
+  ul#myTopnav li a {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    color: #3e14e9;
+  }
 }
