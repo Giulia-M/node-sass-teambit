@@ -310,3 +310,85 @@ $button_border_radius: 5px;
     }
 }
 
+
+
+//footer 
+
+footer.container {
+    margin-top: $spacing * 3;
+    .row-footer {
+        display: flex;
+        .col-4-wrapper {
+            width: 33.33333333%;
+            display: flex;
+            padding-right: 15px;
+            padding-left: 15px;
+            img {
+                width: 50px;
+            }
+            h4 {
+                margin-left: 5%;
+                color: $secondary_color;
+                line-height: 25px;
+
+                span {
+                    color: $primary_color_Button;
+                    font-size: 10px;
+                }
+            }
+        }
+        .col-8 {
+            width: 66.66666667%;
+            .row {
+                display: flex;
+                margin: 0 auto;
+                .col-2 {
+                    width: calc((100% / 12) * 2);
+                  
+                    margin: 0 auto;
+                    h3 {
+                        color: $secondary_color;
+                        margin-bottom: $spacing * 2;
+                        font-weight: bolder;
+                    }
+                    ul {
+                        list-style: none;
+                        li {
+                            a {
+                                text-decoration: none;
+                                color: $secondary_color;
+                                font-weight: bold;
+                                line-height: 30px;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+                .col-3 {
+                    width: 25%;
+                    
+                    margin: 0 auto;
+                    h3 {
+                        margin-bottom: $spacing * 2;
+                    }
+                    ul {
+                        list-style: none;
+                        li {
+                            a {
+                                text-decoration: none;
+                                color: $secondary_color;
+                             
+                                line-height: 30px;
+                                font-size: 12px;
+                                font-weight: bold;
+
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+    
+}
