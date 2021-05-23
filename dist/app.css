@@ -202,58 +202,96 @@ header nav button:hover {
 }
 
 .container-padding {
-  display: flex;
-  padding: 20px 20px;
+  display: block;
+  margin: 0 auto;
 }
 
-.wrapper-img-survey, .wrapper-feed-img {
+.wrapper-feed-img {
   width: 50%;
 }
-.wrapper-img-survey img, .wrapper-feed-img img {
+.wrapper-feed-img img {
   width: 100%;
 }
 
-.wrapper-text-feed {
-  width: 50%;
+.wrapper-img-survey {
+  width: 70%;
 }
-.wrapper-text-feed h3 {
-  margin-bottom: 20px;
-  color: #3e14e9;
+.wrapper-img-survey img {
+  width: 100%;
 }
-.wrapper-text-feed p {
-  margin-bottom: 10px;
-  width: 45%;
-  color: #0e14ee;
-}
+
 .wrapper-text-feed a {
   text-decoration: none;
   color: #0e14ee;
 }
-.wrapper-text-feed a:hover {
-  color: #9830eb;
-}
-.wrapper-text-feed img {
-  margin-top: 10px;
-}
 
-.surveys .wrapper-text-feed {
-  padding-left: 15%;
+@media all and (min-width: 768px) {
+  .container-padding {
+    display: flex;
+    padding: 20px 20px;
+  }
 }
-.surveys .wrapper-text-feed p {
-  width: 100%;
-  color: #0e14ee;
+@media all and (min-width: 768px) {
+  .wrapper-img-survey, .wrapper-feed-img {
+    width: 50%;
+  }
+  .wrapper-img-survey img, .wrapper-feed-img img {
+    width: 100%;
+  }
 }
-.surveys .wrapper-text-feed .wrapper-feed-img {
-  width: 85%;
+@media all and (min-width: 768px) {
+  .wrapper-text-feed {
+    width: 50%;
+  }
+  .wrapper-text-feed h3 {
+    margin-bottom: 20px;
+    color: #3e14e9;
+  }
+  .wrapper-text-feed p {
+    margin-bottom: 10px;
+    width: 45%;
+    color: #0e14ee;
+  }
+  .wrapper-text-feed a {
+    text-decoration: none;
+    color: #0e14ee;
+  }
+  .wrapper-text-feed a:hover {
+    color: #9830eb;
+  }
+  .wrapper-text-feed img {
+    margin-top: 10px;
+  }
 }
-.surveys .wrapper-text-feed .wrapper-feed-img img {
-  width: 100%;
+@media all and (min-width: 768px) {
+  .surveys .wrapper-text-feed {
+    padding-left: 15%;
+  }
+  .surveys .wrapper-text-feed p {
+    width: 100%;
+    color: #0e14ee;
+  }
+  .surveys .wrapper-text-feed .wrapper-feed-img {
+    width: 85%;
+  }
+  .surveys .wrapper-text-feed .wrapper-feed-img img {
+    width: 100%;
+  }
+  .surveys .wrapper-img-survey {
+    width: 50%;
+  }
+  .surveys .wrapper-img-survey img {
+    width: 100%;
+  }
 }
-.surveys .wrapper-img-survey {
-  width: 50%;
+.wrapper-teambit .panel div {
+  margin-top: 10px;
+  display: block;
+  align-items: center;
 }
-.surveys .wrapper-img-survey img {
-  width: 100%;
+.wrapper-teambit .panel div .authors {
+  display: block;
+  font-size: 11px;
 }
 
 .wrapper-teambit {
@@ -293,12 +331,14 @@ header nav button:hover {
 .wrapper-teambit .panel span img:first-of-type {
   margin-right: 20px;
 }
-.wrapper-teambit .panel div {
-  margin-top: 10px;
-  display: flex;
-  align-items: center;
-}
 @media all and (min-width: 768px) {
+  .wrapper-teambit .panel div {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+  }
+}
+@media all and (min-width: 768px) and (min-width: 768px) {
   .wrapper-teambit .panel div .authors {
     display: inline-block;
     font-size: 11px;

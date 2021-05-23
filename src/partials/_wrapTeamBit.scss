@@ -1,4 +1,14 @@
-//sezione prima di footer 
+.wrapper-teambit .panel div {
+    margin-top: 10px;
+    display: block;
+    align-items: center;
+    .authors {
+        display: block;
+        font-size: $font-size - 3px;
+    
+    }
+}
+
 .wrapper-teambit {
     color: $secondary_color;
     font-size: $font-size;
@@ -41,16 +51,19 @@
             
             
         }
-        div {
-            margin-top: $spacing / 2;
-            display: flex;
-            align-items: center;
-            @media all and (min-width: 768px) {
+        @media all and (min-width: 768px) {
 
-                .authors {
-                    display: inline-block;
-                    font-size: $font-size - 3px;
-        
+            div {
+                margin-top: $spacing / 2;
+                display: flex;
+                align-items: center;
+                @media all and (min-width: 768px) {
+    
+                    .authors {
+                        display: inline-block;
+                        font-size: $font-size - 3px;
+            
+                    }
                 }
             }
         }
@@ -86,3 +99,5 @@
     }
 
 }
+
+
