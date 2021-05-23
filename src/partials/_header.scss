@@ -1,48 +1,59 @@
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid $primary_color;
-    margin-bottom: $spacing * 2;
-    
+header {
 
-    ul {
+    nav {
         display: flex;
-        list-style: none;
+        justify-content: space-between;
         align-items: center;
-        li {
-            display: inline-block;
-            margin: 0 $spacing;
-            a {
-                text-decoration:none;
-                color: $secondary_color;
-                font-weight: bolder;
-                &:hover {
-                    color: $hover;
-                    transition: color .3s;
-                }
+        border-bottom: 1px solid $primary_color;
+        margin-bottom: $spacing * 2;
+        div {
+            img {
+                max-width: 120px;
+                width: 100%;
             }
-
-            button {
-            
-                padding: math.div($spacing, 3);
-                margin: math.div($spacing, 2) 0;
+        }
+    
+        ul {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            li {
+                display: inline-block;
+                margin: 0 $spacing;
+                a {
+                    text-decoration:none;
+                    color: $secondary_color;
+                    font-weight: bolder;
+                    &:hover {
+                        color: $hover;
+                        transition: color .3s;
+                    }
+                }
+    
+                button {
                 
-                border-radius: $button_border_radius;
-                border: 1px solid $primary_color_Button;
-                color: $primary_color_Button;
-                background-color: #fff;
-                img {
-                    width: $spacing;
-                    vertical-align: middle;
-                }
-                p {
-                    vertical-align: middle;
-                    display: inline-block;
-                }
-                &:hover {
-                    color: $hover_Button;
-                    border: 1px solid $hover_Button;
+                    padding: math.div($spacing, 3);
+                    margin: math.div($spacing, 2) 0;
+                    
+                    border-radius: $button_border_radius;
+                    border: 1px solid $primary_color_Button;
+                    color: $primary_color_Button;
+                    background-color: #fff;
+                    img {
+                        width: $spacing;
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                    a {
+                        vertical-align: middle;
+                        display: inline-block;
+                        text-decoration: none;
+
+                    }
+                    &:hover {
+                        color: $hover_Button;
+                        border: 1px solid $hover_Button;
+                    }
                 }
             }
         }
