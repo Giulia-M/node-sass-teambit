@@ -237,3 +237,65 @@ nav ul li button:hover {
 .surveys .wrapper-img-survey img {
   width: 100%;
 }
+
+.wrapper-teambit {
+  color: #58402d;
+  font-size: 14px;
+  background-color: #f6e2d5;
+  padding: 40px 0;
+}
+.wrapper-teambit .text-align {
+  text-align: center;
+}
+.wrapper-teambit h1 {
+  font-size: 28px;
+  color: #58402d;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.wrapper-teambit .panel {
+  border-radius: 10px;
+  background-color: #fff;
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #0414B3;
+}
+.wrapper-teambit .panel span img {
+  width: 50px;
+}
+.wrapper-teambit .panel span img:first-of-type {
+  margin-right: 20px;
+}
+.wrapper-teambit .panel div {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.wrapper-teambit .panel div .authors {
+  display: inline-block;
+  font-size: 11px;
+}
+.wrapper-teambit button {
+  margin: 20px 0;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #0414B3;
+  color: #fff;
+  background-color: #0414B3;
+}
+.wrapper-teambit button img {
+  width: 20px;
+  vertical-align: middle;
+}
+.wrapper-teambit button p {
+  vertical-align: middle;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 12px;
+}
+.wrapper-teambit button:hover {
+  color: #fff;
+  border: 1px solid #0e14ee;
+  background-color: #0e14ee;
+}
