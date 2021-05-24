@@ -1,66 +1,106 @@
-header {
 
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-bottom: 1px solid $primary_color;
-        margin-bottom: $spacing * 2;
-        div {
-            img {
-                max-width: 120px;
-                width: 100%;
-            }
+//hamburger menu smartphone
+
+
+.visible-xs-inline-block {
+    display: inline-block;
+    margin: 0 20px;
+    color: $secondary_color;
+}
+header nav ul .topnav.responsive {
+    position: relative;
+
+}
+
+ul#myTopnav {
+    position: absolute;
+    top: 45px;
+    right: 33px;
+
+    li {
+        list-style: none;
+            a {
+            display: block;
+            text-align: left;
+            text-decoration: none;
+            color:$primary_color;
+            
         }
-        @media (min-width: 767.9px) {
+    }
+    .responsive {
+        display: inline-block;
+    }
+}
 
-            ul {
-                display: flex;
-                list-style: none;
-                align-items: center;
-    
-                
-                li {
-                    display: inline-block;
-                    margin: 0 $spacing;
-                    a {
-                        text-decoration:none;
-                        color: $secondary_color;
-                        font-weight: bolder;
-                        &:hover {
-                            color: $hover;
-                            transition: color .3s;
-                        }
-                    }
-        
-                    
+ 
+
+
+header {
+    @media (min-width: 767.9px){
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid $primary_color;
+            margin-bottom: $spacing * 2;
+            div {
+                img {
+                    max-width: 120px;
+                    width: 100%;
                 }
             }
-        }
-
-        button {
+            @media (min-width: 767.9px) {
+    
+                ul {
+                  
+                    list-style: none;
+                    align-items: center;
+                    display: flex;
                     
-            padding: math.div($spacing, 3);
-            margin: math.div($spacing, 2) 0;
+                    
+                    li {
+                        display: inline-block;
+                        margin: 0 $spacing;
+                        a {
+                            text-decoration:none;
+                            color: $secondary_color;
+                            font-weight: bolder;
+                            &:hover {
+                                color: $hover;
+                                transition: color .3s;
+                            }
+                        }
             
-            border-radius: $button_border_radius;
-            border: 1px solid $primary_color_Button;
-            color: $primary_color_Button;
-            background-color: #fff;
-            img {
-                width: $spacing;
-                display: inline-block;
-                vertical-align: middle;
+                        
+                    }
+                }
             }
-            a {
-                vertical-align: middle;
-                display: inline-block;
-                text-decoration: none;
-
-            }
-            &:hover {
-                color: $hover_Button;
-                border: 1px solid $hover_Button;
+    
+            button {
+                        
+                padding: math.div($spacing, 3);
+                margin: math.div($spacing, 2) 0;
+                
+                border-radius: $button_border_radius;
+                border: 1px solid $primary_color_Button;
+                color: $primary_color_Button;
+                background-color: #fff;
+                img {
+                    width: $spacing;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                a {
+                    vertical-align: middle;
+                    display: inline-block;
+                    text-decoration: none;
+    
+                }
+                &:hover {
+                    color: $hover_Button;
+                    border: 1px solid $hover_Button;
+                }
             }
         }
     }

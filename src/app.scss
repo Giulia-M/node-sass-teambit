@@ -14,51 +14,7 @@
 @import "partials/footer";
 
 
-.hidden-xs {
-    display: none;
-}
 
-@media (min-width: 767.9px) {
-
-    .visible-sm-inline-block {
-        display: inline-block;
-    }
-    .hidden-sm {
-        display: none;
-    }
-}
-
-
-//hamburger menu smartphone
-@media all and (max-width: 767.9px) {
-    .visible-xs-inline-block {
-        display: inline-block;
-        margin: 0 20px;
-        color: $secondary_color;
-    }
-    header nav ul .topnav.responsive {
-        position: relative;
-    
-    }
-    
-    ul#myTopnav {
-        position: absolute;
-        top: 45px;
-        right: 33px;
-
-        li {
-            list-style: none;
-                a {
-                display: block;
-                text-align: left;
-                text-decoration: none;
-                color:$primary_color;
-                
-            }
-        }
-    }
-    
-}
 
 
 

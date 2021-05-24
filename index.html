@@ -21,11 +21,11 @@
             <div>
                 <img src="imgs/TB_logo.png" alt="logo">
             </div>
-            <ul class="hidden-xs visible-sm-inline-block topnav" id="myTopnav">
-                <li><a href="#">Solutions</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Sign in</a></li>
+            <ul class="hidden-xs visible-sm-inline-block nav-menu topnav" id="myTopnav" :class="{responsive: toggledNav}">
+                <li><a class="nav-link" href="#">Solutions</a></li>
+                <li><a class="nav-link" href="#">Pricing</a></li>
+                <li><a class="nav-link" href="#">Blog</a></li>
+                <li><a class="nav-link" href="#">Sign in</a></li>
                 <li>
                     <button> 
                         <img src="imgs/google-logo.svg" alt="google-logo">
@@ -34,7 +34,7 @@
                     </button>
                 </li> 
             </ul>
-            <div class="hidden-sm visible-xs-inline-block icon" @click="hamburgerMenu">
+            <div  class=" hamburger hidden-sm visible-xs-inline-block icon" @click="toggledNav = !toggledNav">
                 <i class="fas fa-bars"></i>
             </div>
         </nav>
@@ -370,6 +370,7 @@
         </div>
         
     </footer>
+    
     <script src="myScript.js"></script>
 </body>
 
